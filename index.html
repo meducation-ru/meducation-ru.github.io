@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Набор ЛОР-врача evidENT</title>
+<meta name="description" content="Опросники, шкалы и схемы для ЛОР-врача. evidENT 2026, Meducation.">
+<link rel="stylesheet" href="styles.css">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#021229">
+<link rel="apple-touch-icon" href="icons/192.png">
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar"><div class="logo"><b>Med</b>ucation</div></div>
+  <header class="hero">
+    <p class="kicker">21-22 ноября 2026 · Москва</p>
+    <div class="brandmark" aria-hidden="true">эвидЕНТ 2026</div>
+    <h1>Карманный набор ЛОР-врача</h1>
+    <p class="sub">Форум доказательной оториноларингологии. Опросники, шкалы и схемы с конференции; после первого открытия работают без интернета.</p>
+  </header>
+  <p class="note">Набор только для врача. Опросники врач задаёт пациенту на приёме, самому пациенту для заполнения они не предназначены. Калькуляторы и памятки справочные, по опубликованным методикам: решение о диагнозе и лечении принимает врач по результатам осмотра.</p>
+
+  <main id="home">
+    <div class="chips" role="group" aria-label="Разделы" id="chips"></div>
+    <div class="list" id="list"></div>
+  </main>
+
+  <section id="tool" class="tool" hidden>
+    <button class="back" id="back">← Все инструменты</button>
+    <h2 id="t-name"></h2>
+    <p class="sub" id="t-purpose"></p>
+    <p class="mode" id="t-mode"></p>
+    <div id="t-body" class="tool"></div>
+    <div id="questions" data-testid="questions" class="tool"></div>
+    <div class="result" id="result" data-testid="result" aria-live="polite">
+      <div class="score"><span class="n" id="score" data-testid="score"></span><span class="of" id="score-of"></span></div>
+      <p class="interp" id="interp"></p>
+      <button class="btn" id="copy">Скопировать результат</button>
+      <p class="privacy">Мы не собираем и не храним ответы. Скопированный текст без данных пациента и остаётся на этом устройстве.</p>
+      <span class="copied" id="copied" hidden>Скопировано</span>
+      <textarea id="copytext" rows="4" hidden aria-label="Текст результата" readonly></textarea>
+    </div>
+    <div class="flags" id="t-flags" hidden></div>
+    <div class="src" id="t-src"></div>
+  </section>
+
+  <footer>
+    <h3>Ещё от Meducation</h3>
+    <p>Лекции и вебинары для оториноларингологов.</p>
+    <div class="links" id="links"><a href="https://www.mymeducation.ru/kursy-dlya-vrachey/otorinolaringologiya?utm_source=evident_nabor&amp;utm_medium=nfc&amp;utm_campaign=evident2026" target="_blank" rel="noopener">Каталог для оториноларингологов →</a></div>
+    <p class="org">ООО «ДОФОМИН ОБРАЗОВАНИЕ», ИНН 9729301475, ОГРН 1207700398102. 119192, Москва, Мичуринский пр-т, д. 15А, эт. 3, оф. 21. info@my-meducation.ru</p>
+  </footer>
+</div>
+<script type="module" src="app.js"></script>
+</body>
+</html>
